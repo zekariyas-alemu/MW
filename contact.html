@@ -21,23 +21,77 @@
         <hr>
         
        <form method="POST" action="mailto:zekialemu3@gmail.com"> 
-        <lable for="fname">first name:</lable>
-        <input type="text" id="fname" name="fname">
-        <br>
+           <table>
+               <tr>
+                   <td><lable for="fname">first name:</lable>
+                    <input type="text" id="fname" name="fname" required />
+                    <br>
+            </td>
+               </tr>
+           </table>
+        <table>
+            <tr>
+                <td><lable for="sname">last name:</lable>
+                    <input type="text" id="sname"name="sname"  required />
+                    <br> 
+         </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td> <lable for="email">email:</lable>
+                    <input type="email" id="email" name="email" multiple  required />
+                    <br>
+         </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td> <lable for="tel">phone number:</lable>
+                    <input type="tel" id="tel" name="tel">
+                    <br>
+         </td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr>
+                <td> <lable for="password">your password:</lable>
+                    <input type="password" id="password" name="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+                    <br>
+         </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><lable for="search">search💭</lable>
+                     <input type="search" id="search" name="search">
+         </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>  wat do y ou want to work??
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    <br>
+         </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>  <input type="submit" value="Submit">
+                    <br>
+         </td>
+            </tr>
+        </table>
+        
+       
 
-        <lable for="sname">last name:</lable>
-        <input type="text" id="sname"name="sname">
-        <br>
+        
 
-        <lable for="email">email:</lable>
-        <input type="text" id="email" name="email">
-
-        <br>
-        wat do y ou want to work??
-         <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-         <br>
-         <input type="submit" value="Submit">
-         <br>
+        
+        
+        
         </form>
         <hr>
         <p align="center">Developed By zekariyas. &copy;2020</p> 
