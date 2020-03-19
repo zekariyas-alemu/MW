@@ -5,19 +5,24 @@
     <title>zekariyas</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
-    
+    <style>
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/img/5.jpeg");
+            background-size: cover;
+            
+        }
+        
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-             <li><a href="index.html"> Home</a></li> 
-             <li><a href="contact.html"> Contact</a> </li> 
-             <li><a href="gallery.html"> Gallery</a></li>   
-             <li><a href="blog.html"> Blog</a></li>
+             <li ><a href="index.html"> Home</a></li>  
+             <li class="active"><a href="blog.html"> Blog</a></li>
              <li><a href="contact2.html"> Contact</a> </li>
              <li><a href="gallery2.html"> Gallery</a></li> 
-               
+             <li><a href="mywork.html"> mywork</a></li>  
             </ul>
         </nav>
          
@@ -25,46 +30,102 @@
     <div id="container">
 
         <section>
-        <p class="title">
-        First post
-        </p>
+        <h1 class="title">
+          1.  Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element is responsive ? Why ? 
+        </h1>
         <article>
-            <p>lorem ipsum dolor sit amet</p>
-            <p>lorem ipsum dolor sit amet</p>
-            <p>lorem ipsum dolor sit amet</p>
-            <p>lorem ipsum dolor sit amet</p>
+            <p>Rem :The rem unit in CSS always inherits its value from the base font size setting on the root element of the document,<BR>
+                 irrespective of the computed font size. In HTML, the root element is always the html element. So you could use rems,<BR>
+                but this would mean you’ll have to control all components on the page using the font size on that element. We use rem <BR>
+                most of the time when focusing the size on an isolated component, rather than the whole html.<br><BR>
+                Em :The “em” is a scalable unit that is used in web document media. An em is equal to the current font-size .<BR>
+                Ems are becoming increasingly popular in web documents due to scalability and their mobile-device-friendly <BR>
+                nature.<BR><BR>
+                Percent (%): The percent unit is much like the “em” unit, save for a few fundamental differences.<BR><BR></p>
+                <h2>MAJOR DIFFERENCES</h2>
+                 <p>In theory, both the em and the percent units are identical, but in application, they actually have a few minor <br>
+                    differences that are important to consider. On the “Smallest” setting, ems are much smaller than percent, and when<br>
+                     on the “Largest” setting, it’s quite the opposite, with ems displaying much larger than percent.<BR>
+                While em is relative to the font size of its direct or nearest parent, rem is only relative to the html (root)<BR>
+                     font-size.Rather than it takes only root html font size as an em type it has an identical function to em. </p>
         </article>
         <p class="date">
-        march 11 2020 2:31
+        march 17 2020 1:31
         </p>
         </section>
 
         <section>
-            <p class="title">
-            Second post
-            </p>
+            <h1 class="title">
+               2. We said 16px is default browser width so what does it mean when we say 200px ? How does the browser interpret that ? 
+            </h1>
             <article>
-                <p>lorem ipsum dolor sit amet</p>
-                <p>lorem ipsum dolor sit amet</p>
-                <p>lorem ipsum dolor sit amet</p>
-                <p>lorem ipsum dolor sit amet</p>
+                <p>It means we are overwriting the font size 16px is taken if there is no give size.when we set 200px the borowser interpets it<br> 
+                    the given size as default
+                </p>
+                
             </article>
             <p class="date">
-            march 11 2020 2:36
+                march 19 2020 1:42
             </p>
             </section>
             <section>
-                <p class="title">
-                Third post
-                </p>
+                <h1 class="title">
+                  3.  Explain in detail(​in technical terms ​ ) the specific changes in css3 
+                </h1>
                 <article>
-                    <p>lorem ipsum dolor sit amet</p>
-                    <p>lorem ipsum dolor sit amet</p>
-                    <p>lorem ipsum dolor sit amet</p>
-                    <p>lorem ipsum dolor sit amet</p>
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in<br>
+                         a markup language like HTML. CSS is designed to enable the separation of presentation and content, including layout,<br>
+                         colors, and fonts. Before css3 css2.1, css2, css1 exists.CSS3 version introduced new features that allowed developers<br>
+                          to style HTML elements with less CSS code. CSS3 is most notorious for modules that speed up the specification process.<br>
+                    </p>
+                    <h1>DIFFERENCE WITH OTHERS</h1>
+                        <p>The main difference between CSS and CSS3 is that CSS3 offers new features and separates CSS into convenient modules. <br>
+                            Also, CSS2 consisted of a single specification that defined individual features. However, separate documents (modules)<br>
+                            introduced CSS3 features.<br><br></p> 
+                        <h1>Overview of New Features</h1>
+                        <h2>Box Shadow</h2>
+                        <p>
+                        One of the CSS3 new features is the box-shadow property that adds a shadow to an element. Instead of using multiple images<br>
+                         around an item, this property lets you add shadow with a short line of code.<br></p>
+                        <h1>Opacity</h1>
+                        <p>
+                        One of the CSS3 properties called opacity makes elements see-through or completely transparent. For instance, you can<br>
+                         apply opacity to images or other HTML elements. The transparency level depends on the indicated values.<br><br></p>
+                        
+                        <h1>Rounded Corners</h1>
+                        <p>Before the release of CSS3, developers had to write long code to produce rounded corners. Now, it is enough to apply<br>
+                             the border-radius CSS3 property to HTML elements.<br><br></p>
+                        <h1>Attribute Selectors</h1>
+                        <p>CSS3 also introduced new selectors in addition to the ones in CSS2. Instead of applying IDs or classes for styling,<br>
+                         developers can select HTML elements according to their attributes. As a result, you do not have to create unique <br>
+                         IDs only to apply CSS rules.<br></p>
+                        <h1>New Colors</h1>
+                        <p>One of the CSS3 features is the addition of new colors:<br>
+                        <ul class="fo">
+                            <li>RGBA</li>
+                            <li>HSL</li>
+                            <li>HSLA</li>
+                            <li>Gradient Colors</li>
+                        </ul></p>	
+                        <h1>More than Web-Safe Fonts</h1>
+                        <p> <br>
+                         CSS wanted to ensure that all browsers and machines display fonts the same.But css3 only using fonts labeled as web-safe,<br>
+                          which let us apply more unique fonts in HTML documents.And it upgrades modules which are separate components of the <br>
+                          language this are User Interface ,Backgrounds, Borders, Media Queries, Transforms, Text Effects, Multiple Column<br>
+                           Layout Animation.<br>
+                        </p>
+                        <h1>CSS3 Features: Useful Tips</h1>
+                        <p><ul class="fo">
+                            <li>CSS3 supports responsive designs and manages media queries (used for determining users' devices and screen sizes).<br></li>
+                            <li>Since CSS3 new features let you produce fewer lines of code, you can boost the website speed.</li>
+                            <li>Since CSS3, CSS animations move without JavaScript or Flash code.</li>
+                        </ul></p>
+                       
+                        
+                    
                 </article>
                 <p class="date">
-                march 11 2020 2:36
+                march 19 2020 2:12
                 </p>
                 </section>
         </div>
