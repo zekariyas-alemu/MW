@@ -1,0 +1,60 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    width: 30%;
+    height: 120px;
+    border: 5px solid blue;
+  }
+  
+  .g{
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  
+ .b{
+    border-top-color: transparent;
+ }
+ .c{
+    border-right-color: transparent;
+    border-top-color: transparent; 
+ }
+  
+ .d{
+    border-left-color: transparent;
+     
+ }
+ 
+ .f{
+    border-right-color: transparent; 
+ }
+ .h{
+    border-left-color: transparent;
+    border-bottom-color: transparent; 
+ }
+ .i{
+    border-bottom-color: transparent; 
+ }
+ .j{
+    border-right-color: transparent;
+    border-bottom-color: transparent; 
+ }
+  body{
+    background-color:grey;
+    margin: 200px;
+    
+  
+  }
+  
+  @media only screen and(max-width:700px){
+    nav ul{
+        height: 220px;
+        flex-direction:column;
+        text-align:center ;
+    }
+    nav li{
+        border:0;
+    }
+}
