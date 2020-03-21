@@ -271,11 +271,6 @@
 }
 
 @media only screen and(max-width:700px){
-    nav ul{
-        height: 220px;
-        flex-direction:column;
-        text-align:center ;
-    }
     nav li{
         border:0;
     }
